@@ -3,6 +3,7 @@ First project: A text based program based on the Shin Megami Tensei game series.
 THIS PROGRAM RUNS IN JAVA
 
 import java.util.*;
+
 public class DSPV2 {
 
 	public static void main(String[] args) {
