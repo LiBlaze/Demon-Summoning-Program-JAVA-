@@ -1,4 +1,4 @@
-# Demon-Summoning-Program
+# Demon-Summoning-Program (JAVA)
 First project: A text based program based on the Shin Megami Tensei game series. You can negotiate with demons in order to progress. I plan to add 4 demons in total 
 THIS PROGRAM RUNS IN JAVA
 
