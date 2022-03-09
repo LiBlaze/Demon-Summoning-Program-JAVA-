@@ -1,0 +1,169 @@
+import java.util.*;
+public class DSPV2 {
+
+	public static void main(String[] args) {
+		// começo
+		System.out.println("                  ooo OOOAOOO ooo             ");		
+		System.out.println("              oOO       / \\       OOo          ");
+		System.out.println("          oOO          /   \\          OOo       ");
+		System.out.println("       oOO            /     \\            OOo     ");
+		System.out.println("     oOO             /       \\             OOo    ");
+		System.out.println("   oOO -_-----------/---------\\-----------_- OOo   ");
+		System.out.println("  oOO     -_       /           \\       _-     OOo   ");
+		System.out.println(" oOO         -_   /             \\   _-         OOo  ");
+		System.out.println("oOO             -/_             _\\-             OOo ");
+		System.out.println("oOO             /  -_         _-  \\             OOo ");
+		System.out.println("oOO            /      -_   _-      \\            OOo ");
+		System.out.println("oOO           /         _-_         \\           OOo ");
+		System.out.println("oOO          /       _-     -_       \\          OOo");
+		System.out.println(" oOO        /     _-           -_     \\        OOo ");
+		System.out.println("  oOO      /   _-                 -_   \\      OOo ");
+		System.out.println("   oOO    / _-                       -_ \\    OOo ");
+		System.out.println("     oOO _-                             -_ OOo   ");
+		System.out.println("      oOO                                OOo  ");
+		System.out.println("         oOO                         OOo      ");
+		System.out.println("             oOO                 OOo       ");
+		System.out.println("                 ooo OOO OOO ooo       ");
+		System.out.println("             -----------------------");
+		System.out.println("             DEMON SUMMONING PROGRAM");
+		System.out.println("             ver. ALFA by: Blaze    ");
+		System.out.println("                 COMP: 03.2022      ");
+		System.out.println("             -----------------------");
+
+		//versões futuras podem melhorar a interface do pentagrama
+		//ENTENDER QUE A FALHA NO CÓDIGO ANTERIORMENTE SE DAVA PELO FECHAMENTO ERRADO DAS VARIÁVEIS. FICAR DE OLHO ONDE CADA VARIÁVEL É FECHADA NAS OPÇÕES DE DIALOGO REPARAR QUE CADA { } E ONDE ELES SE ENCONTRAM
+		//ELSE IF PARA CADA NOVO IF DE VARIÁVEL
+		//TESTAR TODAS AS VARIÁVEIS URGENTE
+		System.out.println("YOU HAVE X MAG");//futura implementação do sistema de MAG
+		System.out.println("INPUT DEMON NAME");
+		Scanner In= new Scanner (System.in);
+		String name, a;
+		name= In.nextLine();
+		if (name.equals("PIXIE")) {
+		System.out.println("DEMON ACCEPTED");
+	
+		} else {
+			System.out.println("ERROR TRY RESET");
+			System.exit(0);
+		} 
+		//VARIÁVEIS UTILIZADAS ATÉ AGORA: a,b,c,d,e,f,g,h,i,j
+		String race, b;
+		System.out.println("INPUT DEMON RACE");
+		race= In.nextLine();
+		if (race.equals("FAIRY")) {
+			System.out.println("FAIRY PIXIE");
+			System.out.println("MAG COST= 50MAG");
+		} else {
+			System.out.println("RACE INCORRECT. RESET");
+			System.exit(0);
+		}
+		String answersummon, c;
+		System.out.println("SUMMON FAIRY PIXIE FOR 50 MAG?");
+		answersummon= In.nextLine();
+		if (answersummon.equals("YES")) {
+			System.out.println("FAIRY PIXIE SUMMONED");
+			System.out.println("FAIRY PIXIE: Hello Summoner! I'am Pixie the Fairy! Lets get this killing started!");
+		}else {
+			System.out.println("SUMMONING ENDED DEMON RETURNED");
+			System.exit(0);
+		}
+		System.out.println("FAIRY PIXIE: Give me orders, summoner!");
+		System.out.println("Give FAIRY PIXIE ORDERS");
+		System.out.println("ORDERS: KILL, TALK, TRADE, BE MY DEMON");
+		String orders, d;
+		
+		orders= In.nextLine();
+		if (orders.equals("TALK")) {
+			System.out.println("FAIRY PIXIE: okay... What do you want to talk about then?");
+			System.out.println("TALK ABOUT:");
+			System.out.println("HUMANS? DEMONS? LOVE? MONEY");
+			String talk, f;
+			talk= In.nextLine();
+			if (talk.equals("HUMANS")) {
+				System.out.println("FAIRY PIXIE: Humans are funny creatures hihihihi, id love to split a  human head open to see what is inside! Can we do this, Mr. Summoner!?");
+				System.out.println("INPUT ANSWER: YES//NO");
+		
+				String split, g;
+				split=In.nextLine();
+			if(split.equals("NO")) {
+				System.out.println("FAIRY PIXIE: Awwwww, but how in hell can we know what's inside your head without opening it?");
+				System.out.println("INPUT ANSWER: We have tools // We actually do it, but you cant do it to me // Go ahead and try your luck, fairy ");
+				String answersplit, i;
+				answersplit=In.nextLine();
+				if(answersplit.equals("WE HAVE TOOLS")) {
+					System.out.println("FAIRY PIXIE: Tools to see inside other peopl's heads? Ewww this sounds creepy as fuck, Mr. Summoner");
+					System.out.println("FAIRY PIXIE: You know... maybe i should stick with you, just in case you try to peek inside my head...");
+					System.out.println("FAIRY PIXIE: I will need 200 MAG to come with you, what do you think?");
+					System.out.println("YES/NO");
+					String RECRUIT, j;
+					RECRUIT=In.nextLine();
+				if(RECRUIT.equals("YES")) {
+					System.out.println("FAIRY PIXIE: Yay! So now, we are together!");
+					System.out.println("FAIRY PIXIE: Im Pixie, the fairy! Nice to meet you Summoner!");
+					System.out.println("YOU RECRUITED FAIRY PIXIE");
+					System.out.println("YOU HAVE NOW XXXXXX MAG");
+					//futuramente implementar sistema de subtração e adição de MAG
+				}else if (RECRUIT.equals("NO")) {
+					System.out.println("FAIRY PIXIE: Wait, what? You cheapstake!");
+				}
+				}
+				
+			}else if (split.equals("YES")) {
+				System.out.println("FAIRY PIXIE: Ehhhh how in the world can i split your head from inside this machine?");
+				System.out.println("FAIRY PIXIE: Are you playing with me?");
+				System.out.println("FAIRY PIXIE: I will need compensation for that, Mr. Summoner!");
+				
+			
+				
+				
+			}
+			
+			
+			
+			}
+		}
+	if (orders.equals("KILL")) {
+			System.out.println("FAIRY PIXIE: There's nothing to kill here summoner, are you dumb? hihihihi... I dont want a dumb summoner!");
+			System.out.println("are you dumb?");
+			System.out.println("YES/NO");
+		String dumb, e;
+		dumb= In.nextLine();
+		if (dumb.equals("YES")) {
+			System.out.println("FAIRY PIXIE: As i expected... well, im out.");
+			System.out.println("PIXIE RAN AWAY");
+			System.out.println("SUMMONING PROCESS ENDED RESET");
+			System.exit(0);
+			
+			}else if (dumb.equals("NO")) {
+			System.out.println("FAIRY PIXIE: Then what you want me to kill? you? Well, i should!");
+			System.out.println("FAIRY PIXIE IS ANGRY");
+		
+		}
+		
+		}else if (orders.equals("TRADE")) {
+		System.out.println("FAIRY PIXIE: What, you want to give me something? Im not that kind of girl...");
+		System.out.println("OFFER MAG?");
+		System.out.println("YES/NO");
+        String trade, h;
+		trade= In.nextLine();
+		if (trade.equals("YES")) {
+		System.out.println("FAIRY PIXIE: Oh!? I didn't thought you would ACTUALLY be giving me stuff... Eh... gimme 100 MAG and we should be good.");
+		}else if(trade.equals("NO")) {
+			System.out.println("FAIRY PIXIE: Humph? I don't need your dirty MAG anyways! Stupid Summoner....");
+			System.out.println("...");
+		}
+		
+		
+		}else if (orders.equals("NO")) {
+		
+				System.out.println("FAIRY PIXIE: What? You summoned me all the way here for NOTHING? Stupid Summoner i should tear you apart for wasting my time");
+				System.out.println("PIXIE RAN AWAY");
+				System.out.println("SUMMONING PROCESS ENDED");
+				System.exit(0);
+			}
+		
+		}
+	}
+
+
+
